@@ -22,6 +22,7 @@ WebServices-FrameWork allows the developer to efficently carry out services requ
  2. Create an application in c:\tomcat9\webapps\ folder say, web-app-name
  3. To use the framework copy paste ** serviceJar.jar ** in the c:\tomcat9\webapps\web-app-name\WEB-INF\lib
  4. copy paste PDFGenrator in same folder as that of the newly created web-app
+ 5. copy paste .jar files from AdditionalJars in lib folder of WEB-INF (if you don't have gson and itext jars)
 
 
 # How To Use
@@ -40,3 +41,14 @@ WebServices-FrameWork allows the developer to efficently carry out services requ
     > https://localhost:8080/web-app-name/service/path-to-service-specifed-in-path-annotation
 
 # Documentation
+The framwork provides the following annotations using which the user can programmer the site faster.
+## Annotation
+
+|Name |Property | ElemnetType | Usage |
+|:---|:---|:---| :---|
+|Path| value | METHOD, CLASS | maps the class/method to the url |
+| RequestData | value | METHOD | extract the data from request object (supports json object ) |
+|ResponseType | value | METHOD | sending the response to the client |
+| Secured | value | METHOD | authentication |
+| FileExtractor | location,maxFileSize | METHOD | extract mutiple/single file if send in request|
+

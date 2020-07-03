@@ -49,11 +49,11 @@ WebServices-FrameWork allows the developer to efficiently carry out services req
 The framework provides the following annotations using which the user can programmer the site faster.
 ## Annotation
 
-|Name |Property | ElemnetType | Usage |
+|Name |Property | ElementType | Usage |
 |:---|:---|:---| :---|
 |Path| value | METHOD, CLASS | maps the class/method (on which @Path is applied) to the url |
 | RequestData | value | METHOD | extract the data from request object (supports json object ) |
 |ResponseType | value | METHOD | sending the response to the client |
 | Secured | value | METHOD | authentication |
 | FileExtractor | location,maxFileSize | METHOD | extract mutiple/single file if send in request|
-
+|Forward | value | METHOD | forwards the request to given url|
